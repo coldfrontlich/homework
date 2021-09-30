@@ -1,5 +1,5 @@
 @echo off
-cd semestr1
+cd %1
 cd osnov_prog
 set /p something=
 echo >> %date%.log
