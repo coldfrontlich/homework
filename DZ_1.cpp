@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-    /*std::cout << "Input number(h of pryam triangle) (<= 25):\n";
+    std::cout << "Input number(h of pryam triangle) (<= 25):\n";
     int n;
     std::cin >> n;
     for (int i = 1; i <= n; ++i){
@@ -23,14 +23,13 @@ int main() {
         }
         std::cout << std::endl;
     }
-    */
-    int n;
+    int f;
     std::cout << "Input 1/2 rombhus: ";
-    std::cin >> n;
+    std::cin >> f;
     int tabs = 1;
-    for (int i = 1; i <= 2 * n - 1; i += 2) {
+    for (int i = 1; i <= 2 * f - 1; i += 2) {
         int temp_tabs = 0;
-        while (temp_tabs != n - tabs)
+        while (temp_tabs != f - tabs)
         {
             std::cout << ' ';
             temp_tabs++;
@@ -44,9 +43,9 @@ int main() {
         tabs++;
     }
 
-    tabs = n - 1;
-    for (int i = 2 * (n - 1) - 1; i >= 1; i -= 2) {
-        int temp_tabs = n - tabs;
+    tabs = f - 1;
+    for (int i = 2 * (f - 1) - 1; i >= 1; i -= 2) {
+        int temp_tabs = f - tabs;
         while (temp_tabs != 0)
         {
             std::cout << ' ';
