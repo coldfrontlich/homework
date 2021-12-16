@@ -1,3 +1,4 @@
+//Написать функцию void snakeArray(int** A, int n), которая заполняет массив числами от 1 до n^2 по змейке.
 #include <iostream>
 
 void snake(int** M, int n) {
