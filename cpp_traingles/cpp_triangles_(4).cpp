@@ -15,7 +15,7 @@ int main() {
     std::cout << "enter count of rhombus: ";
     std::cin >> n_rhombus;
     int n;
-    std::cout << "enter count of blocks top side: ";
+    std::cout << "enter n: ";
     std::cin >> n;
     int tabs = n - 1;
     int temp_tabs = tabs;
