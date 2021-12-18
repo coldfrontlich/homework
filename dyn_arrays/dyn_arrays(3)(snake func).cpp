@@ -1,7 +1,7 @@
 //Написать функцию void snakeArray(int** A, int n), которая заполняет массив числами от 1 до n^2 по змейке.
 #include <iostream>
 
-void snake(int** M, int n) {
+void snakeArray(int** M, int n) {
     int num = 1;
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
