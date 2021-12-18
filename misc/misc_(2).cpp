@@ -9,23 +9,34 @@ int main() {
     double x_1, x_2;
     std::cout << "Input a,b,c" << std::endl;
     std::cin >> a >> b >> c;
-    D = (b * b) - (4 * a * c);
-    if (D < 0)
-    {
-        std::cout << "It's not exist" << std::endl;
+    if (a == 0 and b == 0) {
+        std::cout << "It can't be\n";
     }
-    if (D == 0)
-    {
-        x_1 = ((-b) / 2. * a);
-        std::cout << x_1;
+    else if (a == 0 and b != 0) {
+        x_1 = c / b;
+        std::cout << "x = " << x_1;
     }
-    if (D > 0)
-    {
-        x_1 = (((-b) + std::sqrt(D)) / 2. * a);
-        std::cout << "x1 = " << x_1;
-        std::cout << std::endl;
-        x_2 = (((-b) - std::sqrt(D)) / 2. * a);
-        std::cout << "x2 = " << x_2;
+    else if (a != 0 and b == 0) {
+        std::cout << "It's not that i expect\n";
     }
-
+    else {
+        D = (b * b) - (4 * a * c);
+        if (D < 0)
+        {
+            std::cout << "It's not exist" << std::endl;
+        }
+        if (D == 0)
+        {
+            x_1 = ((-b) / 2. * a);
+            std::cout << x_1;
+        }
+        if (D > 0)
+        {
+            x_1 = (((-b) + std::sqrt(D)) / 2. * a);
+            std::cout << "x1 = " << x_1;
+            std::cout << std::endl;
+            x_2 = (((-b) - std::sqrt(D)) / 2. * a);
+            std::cout << "x2 = " << x_2;
+        }
+    }
 }
