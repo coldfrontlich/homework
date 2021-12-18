@@ -8,17 +8,17 @@
 
 void shiftArray(int A[], int n, int k)
 {
-    int counter = 0;
+    int count = 0;
     k >= n ? k -= n : k = k;
-    while (counter < k)
+    while (count < k)
     {
-        int tmp_1 = A[0];
+        int temp = A[0];
         for (int i = 0; i < n; ++i)
         {
             A[i] = A[i + 1];
         }
-        A[n - 1] = tmp_1;
-        ++counter;
+        A[n - 1] = temp;
+        ++count;
     }
 }
 
