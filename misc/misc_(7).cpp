@@ -18,7 +18,7 @@ int main() {
         {
             for (int y = -R; y <= R; y++)
             {
-                if (pow(x, 2) + pow(y, 2) <= pow(R, 2)) {
+                if ((x*x) + (y*y) <= (R*R)) {
                     count += 1;
                 }
             }
