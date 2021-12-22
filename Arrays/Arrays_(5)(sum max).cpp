@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    int maxx = 0;
+    int maxx = INT_MIN;
     int nomer;
     int n;
     std::cout << "Input n: \n";
