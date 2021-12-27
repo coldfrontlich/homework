@@ -3,27 +3,28 @@
 #include <iostream>
 #include <cmath>
 
-
 int main() {
     int R;
-    std::cout << "Input radius: ";
+    long long count = 0;
+    std::cout << "R<10^6 and R > 0: \n";
     std::cin >> R;
-    if (R > pow(10,6))
-    {
-        std::cout << "Error";
+    if (R > pow(10, 6) or R < 0) {
+        std::cout << "Uncorrect";
+        return 0;
     }
     else {
-        int count = 0;
-        for (int x = -R; x <= R; x++)
+        for (int y = R; y >= -R; --y)
         {
-            for (int y = -R; y <= R; y++)
+            for (int x = -R; x <= R; ++x)
             {
-                if ((x*x) + (y*y) <= (R*R)) {
+                if (x * x + y * y <= R * R)
+                {
                     count += 1;
                 }
             }
-
         }
-        std::cout << "Dots: " << count << std::endl;
+        std::cout <<"Dots: " << count << std::endl;
     }
+
+    return 0;
 }
